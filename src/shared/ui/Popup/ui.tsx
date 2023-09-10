@@ -3,8 +3,8 @@ import classNames from "classnames"
 import type { TPopup } from "./types.ts"
 import { useEffect } from "react"
 import useBodyLock from "@/shared/hooks/useBodyLock"
-import "./Popup.scss"
 import SvgIcon from "@/shared/ui/SvgIcon"
+import "./Popup.scss"
 
 const Popup: FC<PropsWithChildren<TPopup>> = (props) => {
   const {
