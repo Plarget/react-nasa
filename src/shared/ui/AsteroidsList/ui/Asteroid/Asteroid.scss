@@ -1,0 +1,57 @@
+@import "@/shared/styles/mixin.scss";
+
+.asteroid {
+  display: grid;
+  row-gap: 8px;
+
+  &__body {
+    display: flex;
+    column-gap: 8px;
+  }
+
+  &__distance {
+    &-value {
+      white-space: nowrap;
+    }
+
+    &-icon {
+      width: 96px;
+      height: 6px;
+    }
+  }
+
+  &__image {
+    &-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    &.is-small {
+      width: 22px;
+      height: 24px;
+    }
+  }
+
+  &__info {
+    &-name {
+      text-decoration: underline;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    &-dangerous {
+      display: flex;
+      align-items: center;
+      column-gap: 3px;
+
+      &-icon {
+        height: 14px;
+        width: 16px;
+      }
+    }
+  }
+}

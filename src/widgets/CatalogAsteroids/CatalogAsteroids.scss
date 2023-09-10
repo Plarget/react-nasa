@@ -1,0 +1,43 @@
+@import "@/shared/styles/mixin.scss";
+
+.catalog-asteroids {
+  &__inner {
+    display: flex;
+  }
+
+  &__body {
+    max-width: 402px;
+  }
+
+  &__header {
+    display: grid;
+    row-gap: 8px;
+
+    &-actions {
+      display: flex;
+      column-gap: 6px;
+    }
+
+    &-button {
+      text-decoration: underline;
+      cursor: pointer;
+
+      &.is-active {
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__list {
+    padding-block: 24px;
+  }
+
+  &__loading {
+    @include flex-center;
+  }
+
+  &__basket {
+    position: fixed;
+  }
+}

@@ -1,0 +1,9 @@
+@import "@/shared/styles/mixin.scss";
+
+.header {
+  padding: 16px;
+
+  &__logo {
+    margin-bottom: 8px;
+  }
+}

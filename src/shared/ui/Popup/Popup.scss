@@ -1,0 +1,47 @@
+@import "@/shared/styles/mixin.scss";
+
+.popup {
+  @include fixed-fullscreen;
+  @include flex-center;
+  background-color: rgb(0, 0, 0, 0.4);
+  transition: 0.35s;
+  z-index: 7;
+
+  &__body {
+    position: relative;
+    overflow-y: auto;
+    max-height: 100vh;
+    background-color: var(--color-dark-gray);
+    padding: 40px 30px;
+    border-radius: 8px;
+    width: 450px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+
+  &__button {
+    color: var(--color-white);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-flex;
+    padding: 5px;
+
+    &-icon {
+      --popup-button-icon-size: 25px;
+      width: var(--popup-button-icon-size);
+      height: var(--popup-button-icon-size);
+      transition: 0.3s;
+    }
+
+    &:hover {
+      color: var(--color-orange);
+    }
+  }
+}

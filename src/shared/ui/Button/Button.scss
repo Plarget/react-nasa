@@ -1,0 +1,48 @@
+@import "@/shared/styles/mixin.scss";
+
+.button {
+  color: var(--color-orange);
+  background-color: var(--color-dark-orange);
+  font-size: 11px;
+  font-weight: 700;
+  height: 24px;
+  padding-inline: 11px;
+  border-radius: 16px;
+  transition: 0.3s;
+  user-select: none;
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--color-white);
+      background-color: var(--color-orange);
+    }
+  }
+
+  &.is-active {
+    color: var(--color-white);
+  }
+
+  &--big {
+    font-size: 16px;
+    height: 48px;
+    border-radius: 40px;
+    padding-inline: 16px;
+  }
+
+  &--orange {
+    color: var(--color-white);
+    background-color: var(--color-orange);
+
+    @media (hover: hover) {
+      &:hover {
+        color: var(--color-orange);
+        background-color: var(--color-dark-orange);
+      }
+    }
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}

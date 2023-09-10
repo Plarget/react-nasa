@@ -1,0 +1,6 @@
+@import "@/shared/styles/mixin.scss";
+
+.asteroids-list {
+  display: grid;
+  row-gap: 24px;
+}

@@ -1,0 +1,11 @@
+@import "@/shared/styles/mixin.scss";
+
+.basket-preview {
+  &__title {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+}

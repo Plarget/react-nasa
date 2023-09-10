@@ -1,0 +1,29 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+  overflow-x: hidden;
+  color: var(--color-white);
+  background-color: var(--color-black);
+
+  &.is-lock {
+    overflow: hidden;
+  }
+}
+
+html, body {
+  scrollbar-gutter: stable;
+}
+
+html, body, #root, .app {
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

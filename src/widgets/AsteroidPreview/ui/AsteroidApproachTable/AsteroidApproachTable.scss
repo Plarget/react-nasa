@@ -1,0 +1,9 @@
+@import "@/shared/styles/mixin.scss";
+
+.asteroid-approach-table {
+  border-spacing: 10px 30px;
+
+  &__label {
+    text-align: center;
+  }
+}

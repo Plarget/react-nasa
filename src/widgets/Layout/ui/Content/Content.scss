@@ -1,0 +1,27 @@
+@import "@/shared/styles/mixin.scss";
+
+.main {
+  flex-grow: 1;
+  padding-bottom: 30px;
+
+  &__image {
+    position: fixed;
+    width: 400px;
+    height: 620px;
+    z-index: -1;
+    @media (max-width: 1366px) {
+      width: 304px;
+      height: 436px;
+    }
+    
+    @media (max-width: 1024px) {
+      width: 20vw;
+      object-fit: cover;
+      object-position: right;
+    }
+    
+    @media (max-width: 767px) {
+      width: 13vw;
+    }
+  }
+}
